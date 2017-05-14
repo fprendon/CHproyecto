@@ -1,43 +1,19 @@
 header{
   display: flex;
   justify-content: center;
-  width: 80%;
-  background-image: url(../../images/flotante2.jpg);
-  background-size: 150%;
-  .logo{
-  display: flex;
-  justify-content: center;
-    img{
-    width: 60%;
-    height: 100%;
-    justify-content: center;
-    }
-  }
-}
-body{
-display: flex;
-flex-direction: column;
-//background-image: url(../../images/flotante2.jpg);//
-background: gray;
-align-content: center;
-align-items: center;
-justify-content: space-between;
-height: 400px;
-width: 100%;
+  width: 100%;
   nav{
     display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 80%;
-      height: 8%;
-      margin-left: 10px;
-      margin-right: 10px;
-      background: rgba(44, 62, 80, 0.8);
-      align-items: center;
-  .buttons{
-  display: none;
-  }
-  .buttonsmobile1{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 8%;
+    background: rgba(44, 62, 80, 1);
+    align-items: center;
+    .buttons{
+      display: none;
+    }
+    .buttonsmobile1{
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -48,34 +24,79 @@ width: 100%;
       align-items: center;
       font-size: 15px;
     }
-  .buttonsmobile2{
-      img{
-        height: 14px;
-      }
+    .container-fluid{
+      display: flex;
+      flex-direction: column;
+      .navbar-header{
+        display: flex;
+        justify-content: center;
+        .sr-only{
+            img{
+              height: 14px;
+            }
         }
-  .buttonsmobile3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: white;
-    height: 30px;
-    width: 100%;
-    padding: 5px;
-    align-items: center;
-    font-size: 15px;
-  }
       }
-  .texto1{
+    }
+    .buttonsmobile3{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+      height: 30px;
+      width: 100%;
+      padding: 5px;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+}
+body{
+display: flex;
+flex-direction: column;
+background: gray;
+align-content: center;
+align-items: center;
+justify-content: space-between;
+height: 850px;
+width: 100%;
+  .container{
     display: flex;
     color: white;
-    font-style: bold;
-    height: 60%;
-    width: 80%;
-    padding: 10px;
-    background-image: url(../../images/flotante2.jpg);
-    background-size: 100%;
-    justify-content: center;
-    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+    .logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 100%;
+    background-image: url(../../images/tower.jpg);
+    background-size: 600px 400px;
+    background-position-x: center;
+    color: black;
+        img{
+        width: 200px;
+        height: 150px;
+      }
+      .texto1{
+        color: white;
+        justify-content: center;
+        width: 50%;
+      }
+    }
+    .texto2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 400px;
+      background-image: url(../../images/flotante2.jpg);
+      background-size: 600px 400px;
+      background-position-x: center;
+    }
   }
     }
 footer{
@@ -90,7 +111,7 @@ justify-content: center;
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 60px;
   }
 }
