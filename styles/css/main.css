@@ -1,46 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 header {
   display: flex;
   justify-content: center;
   width: 100%; }
-  header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 8%;
-    background: #2c3e50;
-    align-items: center; }
-    header nav .buttons {
-      display: none; }
-    header nav .buttonsmobile1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      color: white;
-      height: 30px;
-      width: 100%;
-      padding: 5px;
-      align-items: center;
-      font-size: 15px; }
-    header nav .container-fluid {
-      display: flex;
-      flex-direction: column; }
-      header nav .container-fluid .navbar-header {
-        display: flex;
-        justify-content: center; }
-        header nav .container-fluid .navbar-header .sr-only img {
-          height: 14px; }
-    header nav .buttonsmobile3 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      color: white;
-      height: 30px;
-      width: 100%;
-      padding: 5px;
-      align-items: center;
-      font-size: 15px; }
+  header .nav-estilos {
+    background: rgba(44, 62, 80, 0.5);
+    color: white;
+    height: 50px; }
+    header .nav-estilos a {
+      color: white; }
+    header .nav-estilos a:hover {
+      background: rgba(44, 62, 80, 0.8); }
 
 body {
   display: flex;
@@ -58,7 +29,11 @@ body {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    height: 650px; }
+    height: 650px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: none;
+    margin-right: none; }
     body .container .logo {
       display: flex;
       align-items: center;
@@ -75,31 +50,63 @@ body {
       body .container .logo .texto1 {
         color: white;
         justify-content: center;
-        width: 50%; }
-    body .container .texto2 {
+        width: 50%;
+        margin-top: 60px; }
+      body .container .logo .logo1 {
+        position: absolute;
+        bottom: 350px; }
+    body .container span {
       display: flex;
-      justify-content: center;
-      align-items: center;
       width: 100%;
-      height: 400px;
-      background-image: url(../../images/flotante2.jpg);
-      background-size: 600px 400px;
-      background-position-x: center; }
+      justify-content: center;
+      align-items: center; }
+      body .container span img {
+        width: 200px;
+        height: 150px; }
+  body .texto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../../images/flotante2.jpg);
+    background-size: 600px 400px;
+    background-position-x: center;
+    padding-bottom: 150px; }
+    body .texto2 p {
+      max-width: 530px;
+      color: white;
+      background: rgba(44, 62, 80, 0.3); }
 
 footer {
   display: flex;
-  height: 30%;
+  height: 150px;
   width: 100%;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
   footer .info {
     display: flex;
-    color: white;
     background: #2c3e50;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     width: 100%;
-    height: 60px; }
+    height: 200px; }
+    footer .info .icons {
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      justify-content: center; }
+      footer .info .icons a {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white; }
+  footer .data {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around; }
 
 * {
   margin: 0;

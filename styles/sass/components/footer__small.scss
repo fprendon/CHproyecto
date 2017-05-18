@@ -1,0 +1,33 @@
+footer{
+  display: flex;
+height: 150px;
+width: 100%;
+justify-content: center;
+flex-direction: column;
+  .info{
+    display: flex;
+    background: rgba(44, 62, 80,1);
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 200px;
+    .icons{
+      display: flex;
+      flex-direction: row;
+      font-size: 30px;
+      justify-content: center;
+      a{
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+      }
+    }
+  }
+  .data{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

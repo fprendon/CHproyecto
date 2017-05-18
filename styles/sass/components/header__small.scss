@@ -1,0 +1,16 @@
+header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .nav-estilos{
+    background: rgba(44, 62, 80, 0.5);
+    color: white;
+    height: 50px;
+    a{
+      color: white;
+    }
+    a:hover{
+      background: rgba(44, 62, 80, 0.8)
+    }
+  }
+}
