@@ -79,6 +79,17 @@ body {
       color: white;
       background: rgba(44, 62, 80, 0.3); }
 
+@media screen and (min-width: 768px) {
+  body {
+    height: 1200px; }
+    body .container .logo {
+      background-size: 800px 600px;
+      height: 600px; }
+      body .container .logo .logo1 {
+        bottom: 195px; }
+    body .texto2 {
+      background-size: 800px 600px;
+      height: 600px; } }
 footer {
   display: flex;
   height: 150px;

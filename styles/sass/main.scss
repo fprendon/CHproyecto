@@ -4,16 +4,8 @@
 @import "helpers/typography";
 
 //Mobile First//
-@import "bundles/bundle__small";
+@import "bundles/bundle__all";
 
-//Tablet//
-@media sceen and (min-width: 768px) {
-  @import "bundles/bundle__medium";
-}
-//Desktop//
-@media screen and (min-width: 1024px) {
-  @import "bundles/bundle__large"
-}
 * {
   margin: 0;
   box-sizing: border-box;
